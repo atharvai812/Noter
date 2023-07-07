@@ -130,7 +130,7 @@ svg text {
 
 @media screen and (max-width: 950px) {
   svg text {
-    font-size: 60px;
+    font-size: 50px;
     margin: 0 auto;
   }
   body {
