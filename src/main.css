@@ -1,0 +1,157 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body{
+    background-color: #ff6a6a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url('/assets/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Logo  */
+
+.logo{
+    background: url('/assets/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo svg {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+svg text {
+    animation: stroke 5s alternate;
+    stroke-width: 5;
+    stroke: #FDFF10;
+    font-size: 100px;
+    fill: rgb(255, 255, 255);
+    ;
+    /* fill: rgb(255, 255, 255);  */
+    stroke: rgba(251, 255, 16, 0);
+}
+
+@media screen and (max-width:950px) {
+    svg text{
+        font-size: 80px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:800px) and (max-width:950px) {
+    svg text{
+        font-size: 80px;
+        margin: 0 auto;
+    }   
+}
+
+@media (min-width:700px) and (max-width:800px) {
+    svg text{
+        font-size: 60px;
+        margin: 0 auto;
+    }   
+}
+
+@media (min-width:600px) and (max-width:700px) {
+    svg text{
+        font-size: 50px;
+        margin: 0 auto;
+    }   
+}
+
+@media (min-width:500px) and (max-width:600px) {
+    svg text{
+        font-size: 40px;
+        margin: 0 auto;
+    }   
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    svg text{
+        font-size: 30px;
+        margin: 0 auto;
+    }   
+}
+
+
+/* Logo end */
+#app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    padding: 24px;
+    grid-gap: 24px;
+}
+
+.note{
+    height: 250px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.15);
+    resize: none;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.note:focus{
+    outline: none;
+}
+
+.add-note{
+    height: 250px;
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,0.1);
+    border-radius: 14px;
+    font-size: 120px;
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
+    transition: background 0.2s;
+}
+
+.add-note:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+ /* Logo Animation */
+ @keyframes stroke {
+    0% {
+        fill: rgb(255, 255, 255);
+        stroke: rgba(253, 255, 16, 1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(0, 0, 0, 0);
+        stroke: rgba(253, 255, 16, 1);
+    }
+
+    80% {
+        fill: rgba(0, 0, 0, 0);
+        stroke: rgba(253, 255, 16, 1);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgb(255, 255, 255);
+        stroke: rgba(251, 255, 16, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
