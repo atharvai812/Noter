@@ -12,10 +12,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: url("/assets/bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+  background-position: center;
+  background-repeat: repeat-y;
+  height: fit-content;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 /* Logo  */
@@ -44,8 +46,11 @@ svg text {
 }
 
 /* Logo end */
+
 #app {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(auto-fill, 250px);
   padding: 24px;
   grid-gap: 24px;
@@ -55,12 +60,13 @@ svg text {
   height: 250px;
   box-sizing: border-box;
   padding: 16px;
-  border: none;
+  border: black 2px solid;
   border-radius: 14px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 7px rgba(241, 14, 14, 0.15);
   resize: none;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
+  transition: box-shadow 0.2s;
 }
 
 .note:focus {
@@ -69,7 +75,7 @@ svg text {
 
 .add-note {
   height: 250px;
-  border: none;
+  border: green 2px dashed;
   outline: none;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 14px;
